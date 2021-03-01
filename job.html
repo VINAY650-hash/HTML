@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="script/type" src="jobform.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="script/text" src=jobform.js></script>
+<style>
+h1{
+    background-color: rgb(64, 130, 192) ;
+    color: black;
+    font-size: xx-large;
+    height: 42px;
+    text-align: center;
+    border: 8px solid orangered;   
+}
+
+.q {
+    background-color: rgb(104, 95, 91);
+    align-content: center;
+    width: 600px;
+    padding: 80px;
+    margin: auto;
+    height: 600px;
+}
+</style>
+
+</head>
+<body> 
+    <div class="q">
+<form>
+    <fieldset>
+        <h1><legend>Enter Job Data</legend></h1>
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter Job Title" id="demo1"  name="title"  size="30"required ><br><br>
+
+    <label for="type"><b>Job Type</b></label>
+    <select name="type" id="demo1"required >
+        <option></option>
+        <option value="fulltime">Full-Time</option>
+        <option value="parttime">Part-Time</option>
+        <option value="intern">Internship</option>
+        <option value="contract">Contract-Employee</option>
+        </select><br><br>
+
+        <label for="department"><b>Department</b></label>
+        <select name="type" id="demo1"required >
+            <option></option>
+            <option value="sales">Sales</option>
+            <option value="it">IT</option>
+            <option value="design">Design</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="testing">Testing</option>
+            <option value="infrastructure">Infrastructure</option>
+            </select><br><br>
+
+            <label for="country"><b>Country</b></label>
+            <select name="type" id="demo1" required>
+                <option></option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="england">England</option>
+                <option value="newzealand">Newzealand</option>
+                <option value="northkorea">North Korea</option>
+                <option value="japan">Japan</option>
+                </select><br><br>
+
+                <label for="description"><b>Job-Description:</b></label><br>
+<textarea name="review" placeholder="Enter Job Description" rows="3" cols="70" id="demo1" required></textarea><br><br>
+
+<label for="date"><b>Opening Date</b></label> 
+<input type="date" name="date" id="demo1"> <br><br>
+<button onclick=" jobForm()">submit</button>
+</fieldset>
+
+</form>
+</div>
+
+</body>
+</html>
